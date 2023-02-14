@@ -1,0 +1,52 @@
+@import "../components/filter/pricebar.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "SourceSansPro";
+    font-weight: 400;
+    src: url("/public/fonts/SourceSansPro-Regular.ttf");
+  }
+  @font-face {
+    font-family: "SourceSansPro";
+    font-weight: 600;
+    src: url("/public/fonts/SourceSansPro-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: "SourceSansPro";
+    font-weight: 700;
+    src: url("/public/fonts/SourceSansPro-Bold.ttf");
+  }
+
+  html {
+    @apply !font-sourcesanspro !leading-normal;
+  }
+
+  button {
+    @apply animation;
+  }
+
+  .animation {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .grow-animation {
+    @apply scale-105 animation;
+  }
+
+  .back-shadow {
+    @apply fixed z-[100000] flex justify-center items-start top-0 left-0 w-full h-full bg-[#000000cc] p-4 overflow-y-auto;
+  }
+
+  .player-card-shadow {
+    -webkit-filter: drop-shadow(0px 1px 24px #222222cc);
+    filter: drop-shadow(0px 1px 24px #222222cc);
+  }
+
+  .bg-modal {
+    background-image: url('../../public/bg/player-modal-bg.png');
+    background-size: cover;
+  }
+}

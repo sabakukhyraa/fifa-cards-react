@@ -1,0 +1,9 @@
+.range-slider {
+  @apply !h-1 !bg-sky-light !rounded-full;
+}
+.range-slider__range {
+  @apply !bg-red;
+}
+.range-slider__thumb {
+  @apply !w-3 !h-3 !bg-white !border-2 !border-red;
+}
