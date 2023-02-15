@@ -34,8 +34,8 @@ export default function TheHeader({ whereScroll }) {
           </ul>
           <div className="w-full py-1 pl-[1rem] pr-[9px]">
             <div
-              className={`h-[4px] w-12 bg-red animation ${
-                whereScroll && "translate-x-[135px]"
+              className={`h-[4px] w-12 bg-red translate-x-[5px] animation ${
+                whereScroll && "!translate-x-[154px]"
               }`}
             ></div>
           </div>
