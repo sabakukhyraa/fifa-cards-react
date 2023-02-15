@@ -4,24 +4,10 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "SourceSansPro";
-    font-weight: 400;
-    src: url("/public/fonts/SourceSansPro-Regular.ttf");
-  }
-  @font-face {
-    font-family: "SourceSansPro";
-    font-weight: 600;
-    src: url("/public/fonts/SourceSansPro-SemiBold.ttf");
-  }
-  @font-face {
-    font-family: "SourceSansPro";
-    font-weight: 700;
-    src: url("/public/fonts/SourceSansPro-Bold.ttf");
-  }
 
   html {
-    @apply !font-sourcesanspro !leading-normal;
+    @apply !leading-normal;
+    font-family: "Poppins";
   }
 
   button {
